@@ -5,7 +5,8 @@ import './models/database_provider.dart';
 import './screens/category_screen.dart';
 import './screens/expense_screen.dart';
 import './screens/all_expenses.dart';
-//Hellooooo
+import './screens/income_screen.dart';
+
 void main() {
   runApp(ChangeNotifierProvider(
     create: (_) => DatabaseProvider(),
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         CategoryScreen.name: (_) => const CategoryScreen(),
         ExpenseScreen.name: (_) => const ExpenseScreen(),
         AllExpenses.name: (_) => const AllExpenses(),
+        IncomeScreen.name: (_) => const IncomeScreen(),
       },
     );
   }
